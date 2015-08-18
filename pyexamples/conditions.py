@@ -1,9 +1,9 @@
 
 print('Hello World')
 
-salse = 'tomato;'
+sauce = 'tomato;'
 
-if salse.startswith('toma'):
+if sauce.startswith('toma'):
     print("it's probably tomato...")
 else:
-    print("bit tinati")
+    print("isnt tomato...")
