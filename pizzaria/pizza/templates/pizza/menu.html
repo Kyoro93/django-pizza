@@ -7,6 +7,9 @@
         <ul>
             {% for pizza in pizzas %}
                 <li>
+                    {% if pizza.picture %}
+                    <img src="{{ pizza.picture.url }}" width="200px" alt="{{ pizza.nome }} picture"/>
+                    {% endif %}
                     <h2>{{ pizza.name }} - R${{ pizza.price }}</h2>
                     <div>{{ pizza.ingredients }}</div>
                 </li>
